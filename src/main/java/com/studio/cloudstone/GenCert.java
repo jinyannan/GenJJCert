@@ -36,55 +36,6 @@ public class GenCert {
     }
 
     /**
-     * 添加图片水印
-     * @param //targetImg 目标图片路径，如：C://myPictrue//1.jpg
-     * @param //waterImg 水印图片路径，如：C://myPictrue//logo.png
-     * @param x 水印图片距离目标图片左侧的偏移量，如果x<0, 则在正中间
-     * @param y 水印图片距离目标图片上侧的偏移量，如果y<0, 则在正中间
-     * @param alpha 透明度(0.0 -- 1.0, 0.0为完全透明，1.0为完全不透明)
-     */
-//    public final static void pressImage(String filePath, int x, int y, float alpha) {
-//
-//        String imgType = filePath.substring(filePath.lastIndexOf(".")+1,filePath.length());
-//        try {
-//            File targetFile = new File(filePath);
-//            Image image = ImageIO.read(targetFile);
-//            int width = image.getWidth(null);
-//            int height = image.getHeight(null);
-//            BufferedImage bufferedImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
-//            Graphics2D g = bufferedImage.createGraphics();
-//            g.drawImage(image, 0, 0, width, height, null);
-//
-//            File file = new File(getWaterMarkPath());
-//            if(file == null){
-//                return;
-//            }
-//            Image waterImage = ImageIO.read(file);	// 水印文件
-//            int width_1 = waterImage.getWidth(null);
-//            int height_1 = waterImage.getHeight(null);
-//            g.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_ATOP, alpha));
-//
-//            int widthDiff = width - width_1;
-//            int heightDiff = height - height_1;
-//            if(x < 0){
-//                x = widthDiff / 2;
-//            }else if(x > widthDiff){
-//                x = widthDiff;
-//            }
-//            if(y < 0){
-//                y = heightDiff / 2;
-//            }else if(y > heightDiff){
-//                y = heightDiff;
-//            }
-//            g.drawImage(waterImage, x, y, width_1, height_1, null); // 水印文件结束
-//            g.dispose();
-//            ImageIO.write(bufferedImage, imgType, targetFile);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
-
-    /**
      * 添加文字水印
      *
      * @param targetImg 目标图片路径，如：C://myPictrue//1.jpg
