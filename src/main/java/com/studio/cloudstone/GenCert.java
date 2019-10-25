@@ -39,7 +39,7 @@ public class GenCert {
      * 添加文字水印
      *
      * @param targetImg 目标图片路径，如：C://myPictrue//1.jpg
-     * @param pressText 水印文字， 如：中国证券网
+     * @param pressText 水印文字，
      * @param fontName  字体名称，	如：宋体
      * @param fontStyle 字体样式，如：粗体和斜体(Font.BOLD|Font.ITALIC)
      * @param fontSize  字体大小，单位为像素
